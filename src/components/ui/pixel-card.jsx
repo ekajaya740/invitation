@@ -10,13 +10,13 @@ class Pixel {
     this.color = color
     this.speed = this.getRandomValue(0.1, 0.9) * speed
     this.size = 0
-    this.sizeStep = Math.random() * 0.4
-    this.minSize = 0.5
-    this.maxSizeInteger = 2
+    this.sizeStep = Math.random() * 0.15 + 0.05
+    this.minSize = 0.6
+    this.maxSizeInteger = 1.6
     this.maxSize = this.getRandomValue(this.minSize, this.maxSizeInteger)
     this.delay = delay
     this.counter = 0
-    this.counterStep = Math.random() * 4 + (this.width + this.height) * 0.01
+    this.counterStep = Math.random() * 2 + (this.width + this.height) * 0.005
     this.isIdle = false
     this.isReverse = false
     this.isShimmer = false
@@ -78,7 +78,7 @@ class Pixel {
 function getEffectiveSpeed(value, reducedMotion) {
   const min = 0
   const max = 100
-  const throttle = 0.001
+  const throttle = 0.0007
   const parsed = parseInt(value, 10)
 
   if (parsed <= min || reducedMotion) {
