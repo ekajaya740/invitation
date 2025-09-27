@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  --font-title: 'Playfair Display', serif;
+  --font-name: 'Great Vibes', cursive;
+  --font-body: 'Cormorant Garamond', serif;
+  --text-primary: #111827;
+  --text-muted: #374151;
+  --accent-amber: #b7791f;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+}
+
+.font-title {
+  font-family: var(--font-title);
+}
+
+.font-name {
+  font-family: var(--font-name);
+  letter-spacing: 0.05em;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-accent {
+  color: var(--accent-amber);
+}
